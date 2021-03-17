@@ -45,12 +45,10 @@ router.patch('/:id',
             const caption = req.body.caption;
             const fileName = req.body.url;
 
-            // check Caption is valid
             if (caption) {
                 item.caption = caption;
             }
 
-            // check Filename is valid
             if (fileName) {
                 item.url = fileName;
             }
